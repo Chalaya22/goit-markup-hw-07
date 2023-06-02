@@ -259,6 +259,20 @@ address {
     letter-spacing: 0.02em;
     color: #434455;
   }
+  .mobile-social-media-list {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+  }
+  .mobail-social-media-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .header-bloc {
