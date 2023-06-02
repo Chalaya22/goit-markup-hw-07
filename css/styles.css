@@ -306,26 +306,6 @@ address {
   color: #2e2f42;
 }
 /* section first */
-.section-first {
-  padding-top: 112px;
-  padding-bottom: 188px;
-  background: rgba(46, 47, 66, 0.7);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/fon_image/people-office-mobile.png);
-  max-width: 1158px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 769px),
-  screen and (min-resolution: 192dpi) and (max-width: 769px),
-  screen and (min-resolution: 2dppx) and (max-width: 769px) {
-  .section-first {
-    background-image: url(../images/fon_image/people-office-mobile@2x.png);
-  }
-}
 
 .heder-style {
   font-family: var(--main-font-family);
@@ -367,6 +347,27 @@ address {
 .button-order-service:hover,
 .button-order-service:focus {
   background-color: var(--accent-color-second);
+}
+.section-first {
+  padding-top: 112px;
+  padding-bottom: 188px;
+  background: rgba(46, 47, 66, 0.7);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/fon_image/people-office-mobile.png);
+  max-width: 1158px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-first {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/fon_image/people-office-mobile@2x.png);
+  }
 }
 
 /*   ============= опис ПЛАНШЕТНОІ ВЕРСІІ ================================= */
@@ -455,6 +456,22 @@ address {
     margin-bottom: 36px;
   }
 }
+/* фонове зображення для планшетноі версіі  768+ для екранів пиксельн щільністю 2х*/
+@media screen and (min-width: 768px) {
+  .section-first {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/fon_image/people-office-tablet.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-first {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/fon_image/people-office-tablet@2x.png);
+  }
+}
 
 /* опис ДЕСКТОПНОІ ВЕРСІІ */
 @media screen and (min-width: 1158px) {
@@ -478,6 +495,22 @@ address {
   }
   .heder-style {
     margin-bottom: 48px;
+  }
+}
+/* фонове зображення для планшетноі версіі  1200+ для екранів пиксельн щільністю 2х*/
+@media screen and (min-width: 1158px) {
+  .section-first {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/fon_image/people-office-desktop.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .section-first {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/fon_image/people-office-desktop@2x.png);
   }
 }
 
