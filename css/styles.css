@@ -154,8 +154,6 @@ address {
 /* робимо контейнер гумовий до 396,
   а потім згідно розпакованого медіаправилу фіксованим */
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
   /* background-color: #31d0aa; */
 }
 @media screen and (min-width: 428px) {
@@ -163,6 +161,8 @@ address {
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -175,7 +175,9 @@ address {
 }
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1200px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /* опис МОБІЛЬНОІ ВЕРСІІ */
