@@ -371,6 +371,43 @@ address {
       url(../images/fon_image/people-office-mobile@2x.png);
   }
 }
+/* section second */
+@media screen and (max-width: 1158px) {
+  .section-second-box-icon {
+    display: none;
+  }
+  .section-second {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-second-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 72px;
+  }
+}
+.header-name {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.paragraf-section-second {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 
 /*   ============= опис ПЛАНШЕТНОІ ВЕРСІІ ================================= */
 @media screen and (min-width: 768px) {
@@ -474,6 +511,21 @@ address {
       url(../images/fon_image/people-office-tablet@2x.png);
   }
 }
+/* section seond tablet */
+@media screen and (min-width: 768px) {
+  .section-second-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .section-second-list-item {
+    width: 356px;
+    height: 72px;
+  }
+}
 
 /* опис ДЕСКТОПНОІ ВЕРСІІ */
 @media screen and (min-width: 1158px) {
@@ -513,6 +565,39 @@ address {
   .section-first {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/fon_image/people-office-desktop@2x.png);
+  }
+}
+/* section second desktop */
+@media screen and (min-width: 1158px) {
+  .section-second {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-second-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .section-second-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    text-align: start;
+  }
+  .section-second-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .header-name {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .paragraf-section-second {
+    font-weight: 400;
   }
 }
 
@@ -573,34 +658,31 @@ address {
 } */
 /*========================== section-second ============================*/
 
-.section-second {
+/* .section-second {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-.section-second-list {
+} */
+/* .section-second-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-}
-.section-second-list-item {
+} */
+/* .section-second-list-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
   text-align: start;
-}
-.section-second-box-icon {
+} */
+/* .section-second-box-icon {
   display: flex;
-  /* вирівнюваня по вертикалі */
   align-items: center;
-  /* вирівнювання по горизонталі */
   justify-content: center;
-  /* висота блоку */
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-}
+} */
 
-.header-name {
+/* .header-name {
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
@@ -609,16 +691,16 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-}
+} */
 
-.paragraf-section-second {
+/* .paragraf-section-second {
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
+} */
 /*============================ section-therd ================================*/
 .section-therd {
   padding-bottom: 120px;
