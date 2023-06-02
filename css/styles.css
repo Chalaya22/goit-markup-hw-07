@@ -148,7 +148,11 @@ address {
 } */
 
 /*  =================ADAPTIV VERSIA ================*/
-/* робимо контейнер  гумовий до 396, а потім згідно розпакованого медіаправилу фіксованим */
+
+/*============ Медіа-правила для зображень =============*/
+
+/* робимо контейнер гумовий до 396,
+  а потім згідно розпакованого медіаправилу фіксованим */
 .container {
   padding-left: 16px;
   padding-right: 16px;
@@ -307,14 +311,22 @@ address {
   padding-bottom: 188px;
   background: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/piple_office.jpg);
-  max-width: 1440px;
+    url(../images/fon_image/people-office-mobile.png);
+  max-width: 1158px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 769px),
+  screen and (min-resolution: 192dpi) and (max-width: 769px),
+  screen and (min-resolution: 2dppx) and (max-width: 769px) {
+  .section-first {
+    background-image: url(../images/fon_image/people-office-mobile@2x.png);
+  }
+}
+
 .heder-style {
   font-family: var(--main-font-family);
   font-weight: 700;
