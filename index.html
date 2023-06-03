@@ -190,13 +190,40 @@
         <h2 class="heder-section">What are we doing</h2>
         <ul class="section-therd-list list">
           <li class="section-therd-list-item">
-            <img src="./images/computer.jpg" alt="image1" width="360" height="300" />
+            <picture>
+              <source
+                srcset="
+                  ./images/images-section-3/computer.jpg    1x,
+                  ./images/images-section-3/computer@2x.jpg 2x
+                "
+                media(min-width:
+                1158px)
+              />
+              <img src="./images/computer.jpg" alt="image1" width="360" height="300" />
+            </picture>
           </li>
           <li class="section-therd-list-item">
-            <img src="./images/pages.jpg" alt="image2" width="360" height="300" />
+            <picture>
+              <source
+                srcset="
+                  ./images/images-section-3/pages.jpg    1x,
+                  ./images/images-section-3/pages@2x.jpg 2x
+                "
+              />
+              <img src="./images/pages.jpg" alt="image2" width="360" height="300" />
+            </picture>
           </li>
           <li class="section-therd-list-item">
-            <img src="./images/telefon.jpg" alt="image3" width="360" height="300" />
+            <picture>
+              <source
+                srcset="
+                  ./images/images-section-3/cashlesspayment.jpg    1x,
+                  ./images/images-section-3/cashlesspayment@2x.jpg 2x
+                "
+                media(min-width:1158px)
+              />
+              <img src="./images/telefon.jpg" alt="image3" width="360" height="300" />
+            </picture>
           </li>
         </ul>
       </div>
@@ -204,240 +231,220 @@
 
     <!-- SECTION FOUR-->
     <!-- <section class="section-four">
-        <div class="container">
-          <h2 class="heder-section">Our Team</h2>
-          <ul class="section-four-list list">
-            <li class="secction-four-list-item">
-              <img src="./images/mark.jpg" alt="teamCard1" width="264" height="260" />
-              <div class="employee-desctiption">
-                <h3 class="header-name name">Mark Guerrero</h3>
-                <p class="paragraf-section-four">Product Designer</p>
-                <ul class="social-media-list list">
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon instagram"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon twitter"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon facebook"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon linkedin"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="secction-four-list-item">
-              <img src="./images/tom.jpg" alt="teamCard2" width="264" height="260" />
-              <div class="employee-desctiption">
-                <h3 class="header-name name">Tom Ford</h3>
-                <p class="paragraf-section-four">Frontend Developer</p>
-                <ul class="social-media-list list">
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon instagram"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon twitter"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon facebook"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon linkedin"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="secction-four-list-item">
-              <img src="./images/camila.jpg" alt="teamCard3" width="264" height="260" />
-              <div class="employee-desctiption">
-                <h3 class="header-name name">Camila Garcia</h3>
-                <p class="paragraf-section-four">Marketing</p>
-                <ul class="social-media-list list">
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon instagram"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon twitter"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon facebook"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon linkedin"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="secction-four-list-item">
-              <img src="./images/daniel.jpg" alt="teamCard4" width="264" height="260" />
-              <div class="employee-desctiption">
-                <h3 class="header-name name">Daniel Wilson</h3>
-                <p class="paragraf-section-four">UI Designer</p>
-                <ul class="social-media-list list">
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon instagram"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon twitter"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon facebook"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-media-link">
-                      <svg
-                        class="social-media-icon"
-                        aria-label="icon linkedin"
-                        width="16"
-                        height="16"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
+      <div class="container">
+        <h2 class="heder-section">Our Team</h2>
+        <ul class="section-four-list list">
+          <li class="secction-four-list-item">
+            <img src="./images/mark.jpg" alt="teamCard1" width="264" height="260" />
+            <div class="employee-desctiption">
+              <h3 class="header-name name">Mark Guerrero</h3>
+              <p class="paragraf-section-four">Product Designer</p>
+              <ul class="social-media-list list">
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon instagram"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg class="social-media-icon" aria-label="icon twitter" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon facebook"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon linkedin"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="secction-four-list-item">
+            <img src="./images/tom.jpg" alt="teamCard2" width="264" height="260" />
+            <div class="employee-desctiption">
+              <h3 class="header-name name">Tom Ford</h3>
+              <p class="paragraf-section-four">Frontend Developer</p>
+              <ul class="social-media-list list">
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon instagram"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg class="social-media-icon" aria-label="icon twitter" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon facebook"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon linkedin"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="secction-four-list-item">
+            <img src="./images/camila.jpg" alt="teamCard3" width="264" height="260" />
+            <div class="employee-desctiption">
+              <h3 class="header-name name">Camila Garcia</h3>
+              <p class="paragraf-section-four">Marketing</p>
+              <ul class="social-media-list list">
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon instagram"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg class="social-media-icon" aria-label="icon twitter" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon facebook"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon linkedin"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="secction-four-list-item">
+            <img src="./images/daniel.jpg" alt="teamCard4" width="264" height="260" />
+            <div class="employee-desctiption">
+              <h3 class="header-name name">Daniel Wilson</h3>
+              <p class="paragraf-section-four">UI Designer</p>
+              <ul class="social-media-list list">
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon instagram"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg class="social-media-icon" aria-label="icon twitter" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon facebook"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-media-link">
+                    <svg
+                      class="social-media-icon"
+                      aria-label="icon linkedin"
+                      width="16"
+                      height="16"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section> -->
 
     <!-- SECTION_FIVE -->
     <!-- <section class="section-five">

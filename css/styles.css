@@ -419,6 +419,7 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* section forth-mobile */
 
 /*   ============= опис ПЛАНШЕТНОІ ВЕРСІІ ================================= */
 @media screen and (min-width: 768px) {
@@ -583,6 +584,8 @@ address {
   .section-second {
     padding-top: 120px;
     padding-bottom: 120px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .container-second {
     width: 1158px;
