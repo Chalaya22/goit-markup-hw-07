@@ -165,7 +165,7 @@ address {
     padding-right: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
     max-width: 768px;
   }
@@ -535,7 +535,6 @@ address {
   }
   .section-second-list-item {
     width: 356px;
-    height: 72px;
   }
 }
 
@@ -587,10 +586,7 @@ address {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .container-second {
-    width: 1158px;
-    height: 226px;
-  }
+
   .section-second-list {
     display: flex;
     align-items: center;
@@ -605,8 +601,7 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 112px;
-    width: 264px;
+
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
