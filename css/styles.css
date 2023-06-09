@@ -229,12 +229,15 @@ address {
     position: relative;
     padding-top: 80px;
     padding-left: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .mobile-menu-list {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    margin-bottom: 284px;
+    margin-bottom: auto;
   }
   .mobile-menu-link {
     font-family: var(--main-font-family);
@@ -243,6 +246,9 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+  }
+  .color-link-studio {
+    color: #404bbf;
   }
   .mobile-menu-contact {
     display: flex;
@@ -269,6 +275,7 @@ address {
     display: flex;
     flex-direction: row;
     gap: 56px;
+    padding-bottom: 40px;
   }
   .mobail-social-media-link {
     width: 100%;
@@ -278,6 +285,11 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mobile-social-media-list {
+    gap: 30px;
   }
 }
 
@@ -308,7 +320,12 @@ address {
   color: #2e2f42;
 }
 /* section first */
-
+@media screen and (max-width: 767px) {
+  .heder-style {
+    max-width: 320px;
+    text-align: center;
+  }
+}
 .heder-style {
   font-family: var(--main-font-family);
   font-weight: 700;
@@ -317,10 +334,7 @@ address {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin: 0 auto;
-  width: 320px;
-  height: 80px;
   margin-bottom: 72px;
-  align-items: center;
 }
 .button-order-service {
   background: var(--accent-color);
@@ -349,6 +363,12 @@ address {
 .button-order-service:hover,
 .button-order-service:focus {
   background-color: var(--accent-color-second);
+}
+@media screen and (max-width: 767px) {
+  .section-first {
+    max-width: 428px;
+    height: 412px;
+  }
 }
 .section-first {
   padding-top: 112px;
@@ -394,8 +414,6 @@ address {
     row-gap: 72px;
   }
   .paragraf-section-second {
-    width: 396px;
-    height: 48;
   }
   .header-name {
     text-align: center;
@@ -508,6 +526,12 @@ address {
 .social-media-icon {
   fill: #f4f4fd;
 }
+/* section five */
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media screen and (max-width: 1158px) {
   .section-five {
     padding-top: 96px;
@@ -562,7 +586,6 @@ address {
 }
 @media screen and (max-width: 767px) {
   .footer-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -602,11 +625,15 @@ address {
   text-align: start;
   width: 268px;
   height: 72px;
-  margin-bottom: 72px;
 }
 @media screen and (max-width: 767px) {
   .paragraf-social-media {
     text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .paragraf-footer {
+    margin: 0 auto;
   }
 }
 .paragraf-social-media {
@@ -625,6 +652,8 @@ address {
 .footer-social-media-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
   gap: 16px;
 }
 .social-media-link-footer {
@@ -659,16 +688,12 @@ address {
 }
 @media screen and (max-width: 767px) {
   .footer-form-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-.footer-form-container {
-  display: flex;
-  margin-left: 16px;
-}
+
 @media screen and (max-width: 767px) {
   .footer-form-email {
     margin-bottom: 16px;
@@ -677,7 +702,7 @@ address {
   }
 }
 .footer-form-email {
-  min-width: 264px;
+  width: 100%;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -701,6 +726,7 @@ address {
   height: 40px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -717,6 +743,7 @@ address {
   margin-left: 16px;
 }
 /* модалка */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -742,6 +769,11 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 72px 24px 24px 24px;
+  width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 584px;
+  overflow: scroll;
 }
 
 .modal-class-btn {
@@ -877,17 +909,16 @@ address {
   fill: transparent;
 }
 
-.contact-form-own-checkbox {
-  border: 1px solid #8e8f99;
-  border-radius: 2px;
-  cursor: pointer;
-  padding: 1px;
-}
-
 .contact-form-check-item {
   opacity: 0;
 }
-
+.modal-form-check:checked + .modal-form-check-desc > .user-privacy-item {
+  opacity: 1;
+  background-color: #404bbf;
+  border: none;
+  border-color: #404bbf;
+  fill: #ffffff;
+}
 .modal-form-check:checked
   + .modal-form-check-desc
   > .user-privacy-item
@@ -1094,6 +1125,11 @@ address {
     display: flex;
     flex-wrap: wrap;
     padding-left: 108px;
+    gap: 72px 24px;
+  }
+  .footer-form-container {
+    display: flex;
+    gap: 24px;
   }
 }
 
