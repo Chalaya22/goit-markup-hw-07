@@ -312,8 +312,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
-
-  margin-right: 76px;
+  margin-right: 120px;
 }
 
 .logo-studio {
@@ -372,10 +371,10 @@ address {
 }
 .section-first {
   padding-top: 112px;
-  padding-bottom: 188px;
+  padding-bottom: 112px;
   background: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/fon_image/people-office-mobile.png);
+    url(../images/fon_image/people-office-mobile.jpg);
   max-width: 1158px;
   background-repeat: no-repeat;
   background-position: center;
@@ -388,7 +387,7 @@ address {
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .section-first {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/fon_image/people-office-mobile@2x.png);
+      url(../images/fon_image/people-office-mobile@2x.jpg);
   }
 }
 /* section second */
@@ -576,26 +575,24 @@ address {
 /* footer */
 @media screen and (max-width: 1158px) {
   .footer {
-    display: block;
     padding-top: 96px;
     padding-bottom: 96px;
     background: #2e2f42;
-    padding-left: 16px;
-    padding-right: 16px;
+  }
+}
+
+.footer-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-logo-list {
+    margin-bottom: 72px;
   }
 }
 @media screen and (max-width: 767px) {
-  .footer-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 767pxpx) {
-  .footer-list {
-  }
-}
-@media screen and (max-width: 1158px) {
   .logo-footer {
     display: flex;
     align-items: center;
@@ -649,6 +646,11 @@ address {
     margin-bottom: 72px;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer-list-media {
+    margin-bottom: 72px;
+  }
+}
 .footer-social-media-list {
   display: flex;
   flex-direction: row;
@@ -697,8 +699,6 @@ address {
 @media screen and (max-width: 767px) {
   .footer-form-email {
     margin-bottom: 16px;
-    width: 398px;
-    height: 40px;
   }
 }
 .footer-form-email {
@@ -764,11 +764,11 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 72px 24px 24px 24px;
+
   width: 95%;
   max-width: 392px;
   height: 95%;
@@ -974,7 +974,13 @@ address {
 }
 
 /*   ============= опис ПЛАНШЕТНОІ ВЕРСІІ ================================= */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
+  .header {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+  }
+}
+@media screen and (min-width: 767px) {
   .mobile-menu-open-btn {
     display: none;
   }
@@ -984,7 +990,6 @@ address {
   .nav-content {
     display: flex;
     align-items: center;
-    column-gap: 120px;
   }
   .menu-nav {
     position: relative;
@@ -1051,6 +1056,7 @@ address {
     border-radius: 2px;
     background-color: #404bbf;
   }
+
   /* section first */
   .heder-style {
     font-size: 56px;
@@ -1063,7 +1069,7 @@ address {
 @media screen and (min-width: 768px) {
   .section-first {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/fon_image/people-office-tablet.png);
+      url(../images/fon_image/people-office-tablet.jpg);
   }
 }
 
@@ -1072,18 +1078,15 @@ address {
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-first {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/fon_image/people-office-tablet@2x.png);
+      url(../images/fon_image/people-office-tablet@2x.jpg);
   }
 }
 /* section seond tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .section-second-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    row-gap: 72px;
+    gap: 72px 24px;
   }
   .section-second-list-item {
     width: 356px;
@@ -1108,28 +1111,48 @@ address {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     row-gap: 72px;
   }
   .customers-logo-list {
-    width: calc((100% - 32px) / 3);
+    width: 168px;
     height: 88px;
   }
   /* footer */
-  .footer-container {
-    display: flex;
-    align-items: baseline;
-    gap: 24px;
-  }
+
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 108px;
     gap: 72px 24px;
+    align-items: baseline;
+    max-width: 550px;
   }
   .footer-form-container {
     display: flex;
     gap: 24px;
+  }
+  .footer-form-email {
+    width: 264px;
+  }
+  .modal {
+    position: absolute;
+    width: 408px;
+    height: 576px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 72px 24px 24px 24px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 392px;
+    height: 100%;
+    max-height: 584px;
   }
 }
 
@@ -1143,15 +1166,18 @@ address {
   .contact-item {
     font-size: 16px;
   }
-  .nav-content {
-    column-gap: 120px;
+  .logo {
+    margin-right: 76px;
   }
   .header {
-    padding-left: 156px;
+    padding: 25.5px 56px;
+  }
+  .heade-bloc {
   }
   /* section first */
   .section-first {
     padding-top: 188px;
+    padding-bottom: 188px;
   }
   .heder-style {
     margin-bottom: 48px;
@@ -1164,7 +1190,7 @@ address {
 @media screen and (min-width: 1158px) {
   .section-first {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/fon_image/people-office-desktop.png);
+      url(../images/fon_image/people-office-desktop.jpg);
   }
 }
 
@@ -1173,7 +1199,7 @@ address {
   screen and (min-resolution: 2dppx) and (min-width: 1158px) {
   .section-first {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/fon_image/people-office-desktop@2x.png);
+      url(../images/fon_image/people-office-desktop@2x.jpg);
   }
 }
 /* section second desktop */
@@ -1203,6 +1229,7 @@ address {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
+    height: 112px;
   }
   .header-name {
     font-weight: 500;
@@ -1266,20 +1293,25 @@ address {
   }
   .footer-container {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: baseline;
     max-height: 111px;
+    gap: inherit;
   }
   .footer-form-container {
     display: flex;
     gap: 24px;
     margin-left: 0;
   }
-  /* .footer-label {
-    margin-right: 24px;
-  } */
+  .footer-logo-list {
+    margin-right: 120px;
+  }
   .footer-form-subscribe {
     margin-left: 20px;
+  }
+  .footer-list-media {
+    margin-right: 80px;
   }
 }
 
