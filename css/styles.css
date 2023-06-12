@@ -153,9 +153,7 @@ address {
 
 /* робимо контейнер гумовий до 396,
   а потім згідно розпакованого медіаправилу фіксованим */
-.container {
-  /* background-color: #31d0aa; */
-}
+
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
@@ -167,7 +165,7 @@ address {
 }
 @media screen and (min-width: 767px) {
   .container {
-    max-width: 768px;
+    max-width: 767px;
   }
   .mobile-menu-open-btn {
     display: none;
@@ -375,7 +373,8 @@ address {
   background: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/fon_image/people-office-mobile.jpg);
-  max-width: 1158px;
+  max-width: 1440px;
+  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -404,7 +403,7 @@ address {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .section-second-list {
     display: flex;
     flex-direction: column;
@@ -581,11 +580,11 @@ address {
   }
 }
 
-.footer-container {
+/* .footer-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .footer-logo-list {
@@ -597,10 +596,10 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
   }
 }
 .logo-footer {
+  display: flex;
   font-family: var(--secondary-font-family);
   font-weight: 800;
   font-size: 18px;
@@ -608,6 +607,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  margin-bottom: 16px;
 }
 .logo-studio-footer {
   color: #f4f4fd;
@@ -1120,13 +1120,6 @@ address {
   }
   /* footer */
 
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-    align-items: baseline;
-    max-width: 550px;
-  }
   .footer-form-container {
     display: flex;
     gap: 24px;
@@ -1136,8 +1129,7 @@ address {
   }
   .modal {
     position: absolute;
-    width: 408px;
-    height: 576px;
+
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1149,10 +1141,17 @@ address {
     transform: translate(-50%, -50%) scale(1);
     padding: 72px 24px 24px 24px;
     overflow: hidden;
-    width: 100%;
-    max-width: 392px;
-    height: 100%;
-    max-height: 584px;
+    width: 408px;
+    height: 576px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1158px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: baseline;
+    max-width: 550px;
   }
 }
 
@@ -1181,9 +1180,6 @@ address {
   }
   .heder-style {
     margin-bottom: 48px;
-  }
-  .logo-footer {
-    margin-bottom: 18px;
   }
 }
 /* фонове зображення для планшетноі версіі  1200+ для екранів пиксельн щільністю 2х*/
@@ -1293,11 +1289,7 @@ address {
   }
   .footer-container {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
     align-items: baseline;
-    max-height: 111px;
-    gap: inherit;
   }
   .footer-form-container {
     display: flex;
@@ -1307,9 +1299,7 @@ address {
   .footer-logo-list {
     margin-right: 120px;
   }
-  .footer-form-subscribe {
-    margin-left: 20px;
-  }
+
   .footer-list-media {
     margin-right: 80px;
   }
