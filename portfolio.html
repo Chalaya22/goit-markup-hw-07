@@ -51,6 +51,72 @@
           </ul>
         </address>
       </div>
+      <!-- mobile-menu -->
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobail-menu-container">
+          <button class="mobail-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+          <!-- nav mobilemenu -->
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a href="./index.html" class="mobile-menu-link link"
+                ><span class="color-link-studio">Studio</span></a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="mobile-menu-link link">Contacts</a>
+            </li>
+          </ul>
+          <!-- address mobile menu -->
+          <ul class="mobile-menu-contact list">
+            <li class="mobile-menu-contact-item">
+              <a href="tel:+110001111111" class="mobile-menu-tel-link link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-menu-contact-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu-mail-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <!-- mibiles icons -->
+          <ul class="mobile-social-media-list list">
+            <li class="social-media-item">
+              <a href="" class="mobail-social-media-link">
+                <svg class="social-media-icon" aria-label="icon instagram" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="" class="mobail-social-media-link">
+                <svg class="social-media-icon" aria-label="icon twitter" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="" class="mobail-social-media-link">
+                <svg class="social-media-icon" aria-label="icon facebook" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="" class="mobail-social-media-link">
+                <svg class="social-media-icon" aria-label="icon linkedin" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section-main">
@@ -72,12 +138,41 @@
             <li class="cards-list-item">
               <a href="" class="card-link link">
                 <div class="overlay-img-wrapper">
-                  <img
-                    src="./images/bankapp.jpg"
-                    alt="banking-app-nterface-concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/bankapp-desktop.jpg    1x,
+                        ./images/portfolio/bankapp-desktop@2x.jpg 2x
+                      "
+                      media
+                      (min-width:
+                      1158px)
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/bankapp-tablet.jpg    1x,
+                        ./images/portfolio/bankapp-tablet@2x.jpg 2x
+                      "
+                      media
+                      (min-width:
+                      767px)
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/bankapp-mobile.jpg    1x,
+                        ./images/portfolio/bankapp-mobile@2x.jpg 2x
+                      "
+                      media
+                      (min-width:
+                      280px)
+                    />
+                    <img
+                      src="./images/portfolio/bankapp-mobile.jpg"
+                      alt="banking-app-nterface-concept"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -247,7 +342,7 @@
         </div>
       </section>
     </main>
-    <!-- FOOTER ============================-->
+    <!-- FOOTER ============================ -->
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-list">
@@ -314,5 +409,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
