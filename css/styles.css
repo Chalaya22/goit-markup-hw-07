@@ -414,19 +414,27 @@ address {
   .paragraf-section-second {
   }
   .header-name {
-    text-align: center;
+    /* text-align: start; */
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  .header-name-portf {
+    text-align: start;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
   }
 }
-.header-name {
-  font-family: var(--main-font-family);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 24px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
+
 .paragraf-section-second {
   font-family: var(--main-font-family);
   font-weight: 500;
@@ -1019,11 +1027,14 @@ address {
   border-color: 1px solid transparent;
 }
 /* cards portfolio */
-.cards-list {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
+@media screen and (max-width: 767px) {
+  .cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
 }
+
 .overlay-img-wrapper {
   position: relative;
   overflow: hidden;
@@ -1066,16 +1077,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-.header-name {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-align: start;
 }
 
 /*   ============= опис ПЛАНШЕТНОІ ВЕРСІІ ================================= */
@@ -1275,7 +1276,17 @@ address {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    column-gap: 24px;
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+  .header-name {
+    font-family: 'Roboto';
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
   }
 }
 
@@ -1862,7 +1873,7 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
 } */
-.card-link {
+/* .card-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1870,7 +1881,7 @@ address {
 .card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(0, 0, 0, 0.08);
-}
+} */
 /*================ MODAL WINDOWS============== */
 /* .backdrop {
   position: fixed;
